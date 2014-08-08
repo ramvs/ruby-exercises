@@ -1,11 +1,11 @@
 def multiples(value)
   number = 0
-  for i in 1..value
-    if i%3 == 0 || i%5 == 0 then
+  (1..value).each do |i|
+    if i%3 == 0 || i%5 == 0
       number += i
     end
   end
-return number
+  number
 end
 
 puts "Score for numbers below 10 is " + multiples(9).to_s
