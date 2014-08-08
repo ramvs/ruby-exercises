@@ -1,11 +1,10 @@
 def sum_of_digits(a,b)
   power = a**b
-  digits = power.to_s.length
-  result = 0
-  (0..digits).each do |i|
-    result += power%10
+  sum = 0
+  while power>0 do
+    sum += power%10
     power /= 10
   end
-  result
+  sum
 end
-puts sum_of_digits(2,1000)
+puts sum_of_digits(2,10)
