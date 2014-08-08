@@ -1,7 +1,10 @@
-require "./1euler"
+require "./1euler.rb"
 
-describe "euler" do
-	it "multiples below 1000 return 233168" do
-	expect(multiples).to eq(233168)
+# require "spec_helper"
+
+describe "euler"
+let(:test) {multiples(9)}
+  it "multiples below 10 return 23" do
+   expect(test).to receive(9)
 	end
 end
